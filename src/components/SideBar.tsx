@@ -6,14 +6,16 @@ export default function SideBar() {
   ];
 
   return (
-    <div className="w-20 bg-mauve-950/80 h-svh fixed left-5 top-5">
-      {icons.map((icon: any) => {
-        return (
-          <div key={icon.name} className=" w-12 h-12 bg-gray-700">
-            btn
-          </div>
-        );
-      })}
+    <div className="w-48 bg-[#1f1c1e] h-[85%] fixed left-5 top-28 rounded-2xl shadow-[2px_2px_20px_rgba(,0,0,0.05)] shadow-white/20">
+      <div className="pt-10 h-full flex flex-col justify-start items-start">
+        <div className="flex flex-col w-full text-white font-bold tracking-wider gap-2">
+          {icons.map((i: any) => (
+            <button key={i.icon} className="bg-[#312f30]">
+              {i.name}
+            </button>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
