@@ -3,6 +3,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { Button } from "@/components/ui/button.tsx";
 import { ChevronsUpDown } from "lucide-react";
 import { ButtonGroup } from "@/components/ui/button-group.tsx";
+import { Separator } from "@/components/ui/separator.tsx";
 
 export default function TopBar() {
   return (
@@ -37,7 +38,13 @@ export default function TopBar() {
               </Button>
             }
           />
-          <PopoverContent className="w-60 h-20" align="start"></PopoverContent>
+          <PopoverContent className="w-60 " align="start">
+            <p>account</p>
+            <Separator />
+            <p>settings</p>
+            <p>settings</p>
+            <p>settings</p>
+          </PopoverContent>
         </Popover>
       </div>
     </div>
